@@ -1,0 +1,264 @@
+.lyric {
+  width: 100%;
+  height: 100%;
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    list-style: none;
+  }
+  .content {
+    height: 507px;
+    // background-color: rgba(221, 221, 221, 0.2);
+  }
+  .song-img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -11;
+    filter: blur(150px);
+    >img {
+      height: 100%;
+    }
+  }
+  .imgs {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  /deep/ .van-nav-bar {
+    background-color: transparent;
+  }
+  /deep/.van-nav-bar__left {
+    font-size: 14px;
+  }
+  .song-txt {
+    width: 100%;
+    height: 80%;
+    // background-color: red;
+    text-align: center;
+    height: 360px;
+    overflow: hidden;
+    margin-top: 60px;
+    position: relative;
+    transform-origin: center center;
+  }
+  .song-set {
+    padding: 10px;
+    width: calc(~"100% - 20px");
+    height: 140px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(212, 212, 212, 0.5);
+
+  }
+  .set-top {
+    width: 100%;
+    height: 30px;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    > i {
+      margin: 0 20px;
+      color:#fff;
+    }
+  }
+  .txt-box{
+    width: 100%;
+    
+    transform: translateY(170px);
+    transition: transform 1s;
+  }
+  .song-lyric {
+    width: 100%;
+    font-size: 14px;
+    color: #555555;
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 6px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .active{
+    color: #bd1200;
+  }
+  .rang-lis {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    position: relative;
+    line-height: 20px;
+  }
+  .slide-box {
+    padding: 0 40px;
+  }
+
+  .progress {
+    height: 4px;
+    background-color: #fff;
+  }
+
+  .progress-active {
+    height: 100%;
+    /* background-color: #e4393c; */
+    width: 0;
+  }
+
+  .slide {
+    padding: 8px 0;
+    position: relative;
+  }
+
+  .mask {
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+  .newtime {
+    height: 19px;
+    line-height: 19px;
+  }
+  .time {
+    height: 19px;
+    line-height: 19px;
+
+    transform: translateY(-100%);
+  }
+  .song-bottom {
+    padding: 0 20px;
+    width: calc(~"100% - 40px");
+    display: flex;
+    >div{
+      flex: 1;
+      >img {
+        display: block;
+        margin: 50% auto 0;
+        transform: translateY(-50%);
+
+      }
+    }
+  }
+
+  .song-list{
+    position: fixed;
+    bottom: 10px;
+    width: calc(~"100% - 40px");
+    height: 60%;
+    max-height: 60%;
+    left: 10px;
+    border-radius: 14px;
+    padding: 10px;
+    background-color: #fff;
+
+  }
+  .bg-txt{
+    background-color: #fff;
+  }
+  .play-list {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+
+  }
+  .play-left {
+    width: 80%;
+  }
+  .play-right {
+    width: 20%;
+    font-size: 20px;
+    text-align: right;
+    >i {
+      margin-right: 10px;
+    }
+  }
+  .list-top  {
+    position: relative;
+    left: 0;
+    height: 360px;
+    overflow-y: auto;
+  }
+  .list-box {
+    margin-top: 10px;
+    height: calc(~"100% - 40px");
+    overflow: hidden;
+  }
+  .box-item{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 0px;
+    &:last-child{
+      margin-bottom: 0px;
+      border: none;
+    }
+  }
+  .item-left {
+    font-size: 14px;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &.active{
+      color: #dd1200;
+    }
+  }
+  
+  .item-right{
+    width: 10%;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #8f8f8f;
+    >i {
+      margin-top: 4px;
+    }
+  }
+
+  .item-author {
+    color: #888;
+  }
+  .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+  }
+  .bg-box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: -100;
+  }
+
+  .img {
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(5, 5, 5, 0.6);
+    margin-top: 85px;
+    margin-left: 85px;
+    transform: rotate(0deg);
+    
+  }
+
+}

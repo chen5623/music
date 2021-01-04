@@ -1,0 +1,123 @@
+.home {
+  // background-color: #e8e8e8;
+
+  .home-banner {
+    padding: 6px;
+    position: relative;
+    background-color: #e8e8e8;
+  }
+  .banner-img {
+    border-radius: 10px;
+    overflow: hidden;
+
+  }
+  .banner-title {
+    font-size: 12px;
+    padding: 4px 4px;
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: red;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    opacity: 0.8;
+  }
+  .find {
+    margin-top: 10px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .song-list , .newSong {
+    padding: 10px;
+  }
+  /deep/ .van-grid-item__icon {
+    color: red;
+  }
+
+  .list-top {
+    height: 40px;
+    line-height: 40px;
+  }
+  .song-local {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+  }
+  .song-box {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  
+  }
+  .box-item {
+    width: 33.333%;
+    margin-right: 10px;
+    position: relative;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .item-img {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .item-txt{
+    font-size: 12px;
+  }
+  i{
+    font-style: normal;
+  }
+  .bg-img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../images/play1.png);
+    background-position: -6px -8px;
+    vertical-align: middle;
+  }
+  .item-playCount {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    height: 20px;
+    color: #ddd;
+    line-height: 20px;
+
+  }
+  .count {
+    height: 20px;
+  }
+
+  .newSong-list {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .newSong-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    background-color: #333;
+  }
+  .newSong-info {
+    width: calc(~"100% - 120px");
+    // background-color: red;
+    >div {
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+  .info-name {
+    font-weight: 600;
+  }
+  .song-play {
+    width: calc(~"100% - 305px");
+    height: 60px;
+    font-size: 24px;
+    color: #dd1210;
+    text-align: center;
+    line-height: 60px;
+  }
+}
